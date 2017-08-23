@@ -64,6 +64,9 @@ section button {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  position: absolute;
+  left: 630px;
+  top: 412px;
 }
 
 section button:hover {
@@ -182,4 +185,24 @@ a {
 .buttonPosition
 {
   margin: 0;
+}
+
+.enterBurgerBox {
+
+  width: 30%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  max-height: 100%;
+  margin: 10px 0 0 0;
+  background-color: white;
+  border: 4px solid #000000;
+  position: absolute;
+  left: 500px;
+  top: 500px;
+}
+
+.submitButton {
+
+  padding: 10px;
+  margin-left: 168px;
 }
