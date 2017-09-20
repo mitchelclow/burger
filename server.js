@@ -8,13 +8,16 @@ var path = require('path');
 var homeRouter = require('./controllers/home.js');
 var app = express();
 var port = process.env.PORT || 3000
+app.use(express.static("public"));
 app.set("views", __dirname + "/views");
 app.engine("handlebars", exphbs({
   defaultLayout: 'main'
 }));
 app.set("view engine", "handlebars");
-app.use(express.static('views'));
-// app.use(homeRouter);
+// app.use(express.static('views'));
+app.use("/", homeRouter);
 app.listen(port, function(){
   console.log("server listening on " + port);
 })
+
+
